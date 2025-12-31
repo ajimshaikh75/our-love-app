@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajim ❤️ Taheniyat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="screens">
+    <!-- HOME -->
+    <section class="screen active">
+      <div class="heart">❤️</div>
+      <h1>Ajim & Taheniyat</h1>
+      <p class="date">01 January 2024</p>
+    </section>
+
+    <!-- COUNTER -->
+    <section class="screen">
+      <h2>Our Love Time ⏳</h2>
+      <div id="loveCounter" class="card"></div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="screen">
+      <h2>My Love 💖</h2>
+      <div class="card scroll">
+        My dearest Taheniyat,<br><br>
+        You are my peace, my happiness, and my forever.
+        Every day with you is a blessing from Allah.<br><br>
+        I promise to love you, respect you, and stand by you
+        in every situation of life.<br><br>
+        Happy Anniversary ❤️<br><br>
+        — Ajim
+      </div>
+    </section>
+
+    <!-- PHOTOS -->
+    <section class="screen">
+      <h2>Our Memories 📸</h2>
+      <div class="gallery">
+        <img src="images/photo1.jpg">
+        <img src="images/photo2.jpg">
+        <img src="images/photo3.jpg">
+      </div>
+    </section>
+
+    <!-- SECRET -->
+    <section class="screen">
+      <h2>🔐 Secret Love</h2>
+      <input id="secretInput" placeholder="DD/MM/YYYY">
+      <button onclick="unlock()">Unlock ❤️</button>
+      <p id="msg"></p>
+      <div id="secretBox" class="card scroll hidden">
+        Taheniyat ❤️<br><br>
+        This date changed my life forever.
+        My heart will always choose you.<br><br>
+        Happy Anniversary 💍
+      </div>
+    </section>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <nav>
+    <button onclick="go(0)">🏠</button>
+    <button onclick="go(1)">⏳</button>
+    <button onclick="go(2)">💌</button>
+    <button onclick="go(3)">📸</button>
+    <button onclick="go(4)">🔐</button>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
